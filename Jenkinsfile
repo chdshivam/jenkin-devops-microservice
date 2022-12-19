@@ -1,5 +1,6 @@
 pipeline {
-        agent any
+        //agent any
+		agent { docker { image 'chdshivam/hello-world-nodejs:0.0.2.RELEASE'} }
 		stages { 
              stage('Build') {
 				steps {
